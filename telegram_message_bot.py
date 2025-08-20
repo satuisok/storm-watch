@@ -12,7 +12,6 @@ code_dict = dict(zip(storm_codes["code"], storm_codes["description"]))
 # This is a test list for the Telegram to prevent unnecessary api calls from the OW API
 # forecast_list = [{'time': '12:00:00', 'status': 200, 'location': 'Koivusaari'}, {'time': '15:00:00', 'status': 500, 'location': 'Koivusaari'}, {'time': '18:00:00', 'status': 212, 'location': 'Koivusaari'}, {'time': '12:00:00', 'status': 500, 'location': 'Näköalapaikka'}, {'time': '15:00:00', 'status': 500, 'location': 'Näköalapaikka'}, {'time': '18:00:00', 'status': 500, 'location': 'Näköalapaikka'}]
 
-
 forecast_list = fetch_forecast()
 
 if forecast_list:
