@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Function to fetch the weather data of the specified locations from the API and return a list.
+
 def fetch_forecast():
         forecast_list = []
         for coord in locations:

@@ -17,7 +17,8 @@ forecast_list = fetch_forecast()
 
 if forecast_list:
         for weather in forecast_list:
-                # Send a Telegram message if the weather id is in storm codes
+                # Send a Telegram message if the weather id is in storm codes.
+                # The bot could be separated to its own separate function, but I'm lazy...
                 if weather["status"] in code_dict:
                         message = f"Expect: {code_dict[weather['status']]} today at {weather['time']} in {weather['location']}!"
                         url = f"https://api.telegram.org/bot{os.getenv("TELEGRAM_API")}/sendMessage"
